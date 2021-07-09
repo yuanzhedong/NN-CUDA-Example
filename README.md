@@ -101,6 +101,15 @@ python3 tensorflow/train.py --compiler cmake
 [详解PyTorch编译并调用自定义CUDA算子的三种方式](https://godweiyang.com/2021/03/21/torch-cpp-cuda-2)  
 [三分钟教你如何PyTorch自定义反向传播](https://godweiyang.com/2021/03/24/torch-cpp-cuda-3)
 
+## Nvidia Nsight
+
+[Download](https://developer.nvidia.com/nsight-systems)
+
+```shell
+nsys profile python3 pytorch/time.py --compiler jit
+# go back to host machine
+nsight-sys
+```
 ## F.A.Q
 > **Q.** ImportError: libc10.so: cannot open shared object file: No such file or directory  
 **A.** You must do `import torch` before `import add2`.

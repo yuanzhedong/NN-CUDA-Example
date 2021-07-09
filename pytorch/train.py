@@ -3,7 +3,7 @@ import numpy as np
 import torch
 from torch import nn
 from torch.autograd import Function
-
+# https://zhuanlan.zhihu.com/p/359524837
 class AddModelFunction(Function):
     @staticmethod
     def forward(ctx, a, b, n):
